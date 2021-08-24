@@ -67,7 +67,7 @@ class Config:
         REPLY_MESSAGE=REPLY_MESSAGE
     else:
         REPLY_MESSAGE=None
-    EDIT_TITLE = os.environ.get("EDIT_TITLE", false)
+    EDIT_TITLE = os.environ.get("EDIT_TITLE", False)
     if EDIT_TITLE == "NO":
         EDIT_TITLE=None
     DURATION_LIMIT=int(os.environ.get("MAXIMUM_DURATION", 15))
