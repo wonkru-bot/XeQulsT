@@ -8,4 +8,14 @@ youtube_dl
 youtube_search_python
 youtube_search
 wget
+
 requests
+git+https://github.com/pyrogram/pyrogram@master
+asyncio
+
+python-rapidjson>=0.9.3
+
+Pillow>=4.2.0
+
+aiohttp
+tswift
