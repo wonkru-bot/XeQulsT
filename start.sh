@@ -1,5 +1,5 @@
 echo "Cloning Repo...."
-git clone https://github.com/itzforu/XEQUIST.git /XEQUIST
-cd /XEQUIST
+git clone https://github.com/wonkru-bot/XeQulsT.git /XeQulsT
+cd /XeQulsT
 echo "Starting Bot...."
 python3 main.py
