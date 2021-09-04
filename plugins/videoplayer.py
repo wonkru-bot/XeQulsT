@@ -11,7 +11,7 @@ from config import Config
 
 
 
-group_call_factory = GroupCallFactory(app, GroupCallFactory.MTPROTO_CLIENT_TYPE.PYROGRAM)
+group_call_factory = GroupCallFactory(GroupCallFactory.MTPROTO_CLIENT_TYPE.PYROGRAM)
 
 VIDEO_CALL = {}
 
