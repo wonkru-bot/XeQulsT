@@ -12,7 +12,6 @@ from config import Config
 
 
 group_call_factory = GroupCallFactory(GroupCallFactory.MTPROTO_CLIENT_TYPE.PYROGRAM)
-
 VIDEO_CALL = {}
 
 @Client.on_message(filters.command("stream"))
@@ -30,6 +29,10 @@ async def stream(client, m: Message):
         msg = await m.reply("`Downloading...`")
 
         chat_id = m.chat.id
+
+        if os.path.exists(f'stream-{chat_id}.raw'):
+
+            os.remove(f'stream-{chat_id}.raw')
 
         try:
 
@@ -57,6 +60,14 @@ async def stream(client, m: Message):
 
             await msg.edit("**▶️ Started Streaming!**")
 
+        except FloodWait as e:
+
+            await sleep(e.x)
+
+            if not group_call.is_connected:
+
+                await group_call.start(chat_id)
+
         except Exception as e:
 
             await msg.edit(f"**Error** -- `{e}`")
@@ -80,3 +91,4 @@ async def stopvideo(client, m: Message):
     except Exception as e:
 
         await m.reply(f"**🚫 Error** - `{e}`")
+
