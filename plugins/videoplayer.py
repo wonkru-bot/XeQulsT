@@ -3,7 +3,7 @@ import os
 import asyncio
 
 from pytgcalls import GroupCallFactory
-
+from pyrogram.raw.functions.phone import CreateGroupCall
 from pyrogram import Client, filters
 
 from pyrogram.types import Message
