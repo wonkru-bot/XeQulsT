@@ -8,7 +8,7 @@ youtube_dl
 youtube_search_python
 youtube_search
 wget
-
+python-dotenv
 requests
 git+https://github.com/pyrogram/pyrogram@master
 asyncio
