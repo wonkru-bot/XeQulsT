@@ -8,9 +8,10 @@ from pyrogram import Client, filters
 
 from pyrogram.types import Message
 from config import Config
-
-
-
+SESSION_NAME = Config.SESSION_NAME
+API_HASH = Config.API_HASH
+API_ID = Config.API_ID
+app = Client(SESSION_NAME, API_ID, API_HASH)
 group_call_factory = GroupCallFactory(GroupCallFactory.MTPROTO_CLIENT_TYPE.PYROGRAM)
 VIDEO_CALL = {}
 
