@@ -1,5 +1,5 @@
 Pyrogram
-TgCrypto
+TgCrypto==1.2.2
 ffmpeg-python
 psutil
 pytgcalls[pyrogram]
@@ -8,11 +8,11 @@ youtube_dl
 youtube_search_python
 youtube_search
 wget
-python-dotenv
+python-dotenv>=0.10
 requests
 git+https://github.com/pyrogram/pyrogram@master
 asyncio
-pytgcalls==3.0.0.dev12
+pytgcalls==3.0.0.dev13
 python-rapidjson>=0.9.3
 
 Pillow>=4.2.0
