@@ -2,7 +2,7 @@ from pyrogram import Client ,filters
 
 import os
 
-from helper.database import getid
+from Bitch.database import getid
 
 ADMIN = int(os.environ.get("ADMIN", 923943045))
 
